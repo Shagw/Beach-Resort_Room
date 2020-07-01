@@ -12,10 +12,10 @@ function App() {
     <div>
       <Navbar />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/rooms" component={Rooms} />
-        <Route exact path="/rooms/:slug" component={SingleRoom} />
-        <Route component={Error} />
+        <Route  component={Home} />
+        <Route exact path="#/rooms" component={Rooms} />
+        <Route exact path="#/rooms/:slug" component={SingleRoom} />
+        <Route path="#" component={Error} />
       </Switch>
     </div>
   );
